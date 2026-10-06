@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MASHALA INVESTMENT | Quality Clothes, Shoes & Electronics Accessories</title>
-<meta name="description" content="MASHALA INVESTMENT — Your one-stop shop for quality second-hand & brand new clothes and shoes for men, women and children, plus phones, chargers, memory cards, earphones, headphones, radios and all accessories.">
+<meta name="description" content="MASHALA INVESTMENT — Quality second-hand & brand new clothes, shoes, phones, laptops, solar, home appliances & accessories. Delivery all over Tanzania. Call +255 617 573 840.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -28,7 +28,6 @@
   a{text-decoration:none;color:inherit;}
   .container{width:min(1150px,92%);margin:0 auto;}
 
-  /* ===== NAVBAR ===== */
   header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(10,22,40,.97);box-shadow:0 2px 15px rgba(0,0,0,.4);}
   nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;}
   .logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:1.15rem;letter-spacing:.5px;}
@@ -45,7 +44,6 @@
     .nav-links.open{right:0;}
   }
 
-  /* ===== HERO ===== */
   .hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 40%, var(--blue-mid) 70%, var(--blue-light) 100%);color:#fff;padding:130px 0 90px;overflow:hidden;}
   .hero::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle, rgba(77,208,225,.15), transparent 70%);top:-200px;right:-150px;}
   .hero::after{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle, rgba(129,212,250,.1), transparent 70%);bottom:-150px;left:-100px;}
@@ -72,13 +70,11 @@
   .float-card h3{font-size:1.05rem;margin-bottom:6px;color:var(--cyan);}
   .float-card p{font-size:.85rem;color:var(--text-light);font-weight:300;}
 
-  /* ===== SECTION BASE ===== */
   section{padding:90px 0;}
   .sec-label{display:inline-block;color:var(--cyan);background:rgba(77,208,225,.12);padding:6px 18px;border-radius:50px;font-weight:600;font-size:.85rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;}
   .sec-title{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#fff;margin-bottom:14px;}
   .sec-sub{color:var(--text-light);max-width:640px;line-height:1.7;font-weight:300;}
 
-  /* ===== ABOUT ===== */
   .about{background:var(--navy);}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
   @media(max-width:860px){.about-grid{grid-template-columns:1fr;}}
@@ -94,7 +90,6 @@
   .about-point h4{font-size:1rem;margin-bottom:3px;color:#fff;}
   .about-point p{font-size:.88rem;color:var(--text-light);font-weight:300;line-height:1.6;}
 
-  /* ===== CATEGORY SHOP ===== */
   .shop{background:var(--navy-dark);}
   .shop-block{margin-top:56px;}
   .shop-block-head{display:flex;align-items:center;gap:16px;margin-bottom:30px;flex-wrap:wrap;}
@@ -103,18 +98,24 @@
   .icon-tech{background:linear-gradient(135deg,var(--sky),var(--cyan));}
   .shop-block-head h3{font-size:1.6rem;color:#fff;font-weight:800;}
   .shop-block-head p{width:100%;color:var(--text-light);font-weight:300;font-size:.95rem;}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;}
-  .card{background:rgba(77,208,225,.06);border:1px solid rgba(77,208,225,.15);border-radius:20px;padding:30px 24px;transition:transform .25s, box-shadow .25s, background .25s;position:relative;overflow:hidden;}
-  .card::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--cyan),var(--sky));opacity:0;transition:opacity .25s;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+  .card{background:rgba(77,208,225,.06);border:1px solid rgba(77,208,225,.15);border-radius:20px;padding:0;overflow:hidden;transition:transform .25s, box-shadow .25s, background .25s;position:relative;}
   .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(77,208,225,.15);background:rgba(77,208,225,.1);}
-  .card:hover::before{opacity:1;}
-  .card .emoji{font-size:2.4rem;margin-bottom:16px;display:block;}
-  .card h4{font-size:1.12rem;color:#fff;margin-bottom:8px;font-weight:700;}
-  .card p{font-size:.88rem;color:var(--text-light);font-weight:300;line-height:1.65;}
-  .card .tag{display:inline-block;margin-top:14px;font-size:.72rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--navy-dark);background:var(--cyan);padding:5px 13px;border-radius:50px;}
-  .card .tag.gold{color:var(--navy-dark);background:var(--sky);}
 
-  /* ===== WHY US ===== */
+  /* IMAGE AREA — emoji shown behind, photo on top when it loads */
+  .card-img{height:200px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(135deg,rgba(77,208,225,.25),rgba(26,58,107,.6));}
+  .card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block;}
+  .card:hover .card-img img{transform:scale(1.08);}
+
+  .card-body{padding:22px 22px 24px;}
+  .card h4{font-size:1.08rem;color:#fff;margin-bottom:6px;font-weight:700;line-height:1.35;}
+  .card .card-cat{font-size:.72rem;color:var(--cyan);font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-bottom:8px;}
+  .card .card-price{font-size:1.1rem;font-weight:800;color:var(--cyan);margin-bottom:4px;line-height:1.25;}
+  .card .card-price-usd{font-size:.78rem;color:var(--text-light);font-weight:500;margin-bottom:10px;}
+  .card p{font-size:.86rem;color:var(--text-light);font-weight:300;line-height:1.6;margin-bottom:14px;}
+  .card .tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--navy-dark);background:var(--cyan);padding:5px 13px;border-radius:50px;}
+  .card .tag.gold{background:var(--sky);}
+
   .why{background:linear-gradient(135deg,var(--navy-dark),var(--blue-mid));color:#fff;}
   .why .sec-title{color:#fff;}
   .why .sec-sub{color:var(--text-light);}
@@ -125,7 +126,6 @@
   .why-card h4{font-size:1.08rem;margin-bottom:8px;color:#fff;}
   .why-card p{font-size:.86rem;color:var(--text-light);font-weight:300;line-height:1.65;}
 
-  /* ===== CONTACT ===== */
   .contact{background:var(--navy);}
   .contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;margin-top:10px;}
   @media(max-width:860px){.contact-grid{grid-template-columns:1fr;}}
@@ -145,7 +145,6 @@
   .hours-box h5{font-size:.85rem;color:var(--cyan);text-transform:uppercase;letter-spacing:1px;}
   .hours-box p{font-size:.95rem;font-weight:600;color:#fff;}
 
-  /* ===== FOOTER ===== */
   footer{background:var(--navy-dark);color:var(--text-light);padding:56px 0 0;border-top:1px solid rgba(77,208,225,.1);}
   .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:44px;}
   @media(max-width:860px){.footer-grid{grid-template-columns:1fr;}}
@@ -155,16 +154,9 @@
   .footer-about p{font-size:.9rem;font-weight:300;line-height:1.7;margin-top:12px;}
   .footer-bottom{border-top:1px solid rgba(77,208,225,.1);padding:20px 0;text-align:center;font-size:.85rem;font-weight:300;}
 
-  /* ===== TICKER ===== */
   .ticker{background:var(--cyan);padding:14px 0;}
   .ticker-inner{display:flex;justify-content:center;gap:38px;flex-wrap:wrap;font-weight:700;color:var(--navy-dark);font-size:.95rem;}
 
-  /* ===== CARD IMAGES ===== */
-  .card-img{height:200px;border-radius:14px;overflow:hidden;margin-bottom:18px;background:rgba(77,208,225,.1);}
-  .card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block;}
-  .card:hover .card-img img{transform:scale(1.09);}
-
-  /* ===== STEPS ===== */
   .steps{background:var(--navy);}
   .steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px;}
   .step-card{background:rgba(77,208,225,.06);border:1px solid rgba(77,208,225,.15);border-radius:20px;padding:38px 28px;text-align:center;transition:transform .25s;}
@@ -173,7 +165,6 @@
   .step-card h4{font-size:1.1rem;color:#fff;margin-bottom:8px;}
   .step-card p{font-size:.9rem;color:var(--text-light);font-weight:300;line-height:1.65;}
 
-  /* ===== TESTIMONIALS ===== */
   .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:48px;}
   .testi-card{background:rgba(77,208,225,.06);border:1px solid rgba(77,208,225,.15);border-radius:20px;padding:32px 28px;transition:transform .25s, box-shadow .25s;}
   .testi-card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(77,208,225,.1);}
@@ -184,19 +175,16 @@
   .testi-card .who h5{font-size:.95rem;color:#fff;}
   .testi-card .who span{font-size:.8rem;color:var(--text-light);}
 
-  /* ===== FLOATING WHATSAPP ===== */
   .wa-float{position:fixed;bottom:24px;right:24px;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:900;transition:transform .2s;}
   .wa-float:hover{transform:scale(1.1);}
   .wa-float svg{width:30px;height:30px;fill:#fff;}
 
-  /* ===== SCROLL REVEAL ===== */
   .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease, transform .7s ease;}
   .reveal.visible{opacity:1;transform:translateY(0);}
 </style>
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <header>
   <div class="container">
     <nav>
@@ -216,13 +204,12 @@
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-content">
       <span class="hero-tag">🇹🇿 Quality Products • Serving All Tanzania</span>
       <h1>Welcome to <span>MASHALA INVESTMENT</span></h1>
-      <p>Your trusted one-stop shop for quality <strong>second-hand & brand new clothes and shoes</strong> for men, women and children — plus <strong>phones, chargers, memory cards, earphones, headphones, radios</strong> and all accessories.</p>
+      <p>Your trusted one-stop shop for quality <strong>second-hand & brand new clothes and shoes</strong> for men, women and children — plus <strong>phones, laptops, solar, home appliances</strong> and all accessories.</p>
       <div class="hero-btns">
         <a href="tel:+255617573840" class="btn btn-cyan">📞 Call Us Now</a>
         <a href="https://wa.me/255617573840" target="_blank" class="btn btn-outline">💬 Chat on WhatsApp</a>
@@ -235,33 +222,20 @@
     </div>
   </div>
   <div class="hero-float">
-    <div class="float-card">
-      <div class="emoji">👗</div>
-      <h3>Clothes & Shoes</h3>
-      <p>Second-hand & brand new — men, women & kids.</p>
-    </div>
-    <div class="float-card">
-      <div class="emoji">🎧</div>
-      <h3>Accessories</h3>
-      <p>Phones, chargers, earphones, radios & more.</p>
-    </div>
+    <div class="float-card"><div class="emoji">👗</div><h3>Clothes & Shoes</h3><p>Second-hand & brand new — men, women & kids.</p></div>
+    <div class="float-card"><div class="emoji">🎧</div><h3>Accessories</h3><p>Phones, chargers, earphones, radios & more.</p></div>
   </div>
 </section>
 
-<!-- ===== TICKER ===== -->
 <div class="ticker">
   <div class="ticker-inner">
-    <span>🚚 DELIVERY ALL OVER TANZANIA</span>
-    <span>•</span>
-    <span>💯 QUALITY GUARANTEED</span>
-    <span>•</span>
-    <span>💰 BEST PRICES</span>
-    <span>•</span>
+    <span>🚚 DELIVERY ALL OVER TANZANIA</span><span>•</span>
+    <span>💯 QUALITY GUARANTEED</span><span>•</span>
+    <span>💰 BEST PRICES</span><span>•</span>
     <span>📞 CALL +255 617 573 840</span>
   </div>
 </div>
 
-<!-- ===== ABOUT ===== -->
 <section class="about" id="about">
   <div class="container">
     <div class="about-grid">
@@ -275,128 +249,511 @@
         <h2 class="sec-title">Who We Are</h2>
         <p class="sec-sub">We are a business built on trust, quality and customer satisfaction. Whether you're dressing your family or need the latest phone accessories — we've got you covered.</p>
         <div class="about-points">
-          <div class="about-point">
-            <span class="tick">✓</span>
-            <div><h4>Quality Second-Hand (Mtumba) & Brand New</h4><p>Carefully selected clothes and shoes in great condition for men, women and children.</p></div>
-          </div>
-          <div class="about-point">
-            <span class="tick">✓</span>
-            <div><h4>All Electronics Accessories</h4><p>From phones to chargers, memory cards, earphones, headphones and radios.</p></div>
-          </div>
-          <div class="about-point">
-            <span class="tick">✓</span>
-            <div><h4>Friendly Service & Fair Prices</h4><p>Every customer matters. We treat you like family and price honestly.</p></div>
-          </div>
-          <div class="about-point">
-            <span class="tick">✓</span>
-            <div><h4>Delivery All Over Tanzania 🇹🇿</h4><p>Wherever you are in Tanzania, we can deliver to you. Call or WhatsApp to order!</p></div>
-          </div>
+          <div class="about-point"><span class="tick">✓</span><div><h4>Quality Second-Hand (Mtumba) & Brand New</h4><p>Carefully selected clothes and shoes in great condition for men, women and children.</p></div></div>
+          <div class="about-point"><span class="tick">✓</span><div><h4>All Electronics Accessories</h4><p>From phones to chargers, memory cards, earphones, headphones and radios.</p></div></div>
+          <div class="about-point"><span class="tick">✓</span><div><h4>Friendly Service & Fair Prices</h4><p>Every customer matters. We treat you like family and price honestly.</p></div></div>
+          <div class="about-point"><span class="tick">✓</span><div><h4>Delivery All Over Tanzania 🇹🇿</h4><p>Wherever you are in Tanzania, we can deliver to you. Call or WhatsApp to order!</p></div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SHOP ===== -->
 <section class="shop" id="shop">
   <div class="container">
     <div style="text-align:center;">
       <span class="sec-label">What We Sell</span>
       <h2 class="sec-title">Our Products</h2>
-      <p class="sec-sub" style="margin:0 auto;">Two great departments, one convenient shop — quality you can trust at prices you'll love.</p>
+      <p class="sec-sub" style="margin:0 auto;">Every product shows a matching picture and price — updated for Tanzania market.</p>
     </div>
 
-    <!-- PART 1: FASHION -->
-    <div class="shop-block reveal">
-      <div class="shop-block-head">
-        <div class="shop-block-icon icon-fashion">👕</div>
-        <h3>Part 1: Clothes & Shoes</h3>
-        <p>Second-hand & brand new fashion for the whole family.</p>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="Second-hand men's shirts" loading="lazy"></div>
-          <h4>Second-Hand Clothes — Men</h4>
-          <p>Quality mtumba shirts, trousers, jackets, suits and more for men. Clean, durable and affordable.</p>
-          <span class="tag">Second-Hand</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=600" alt="Second-hand women's dresses" loading="lazy"></div>
-          <h4>Second-Hand Clothes — Women</h4>
-          <p>Beautiful dresses, tops, skirts and outfits carefully selected for style and quality.</p>
-          <span class="tag">Second-Hand</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600" alt="Children's clothes" loading="lazy"></div>
-          <h4>Second-Hand Clothes — Children</h4>
-          <p>Comfortable, quality clothes for babies, kids and teens — gentle on your pocket.</p>
-          <span class="tag">Second-Hand</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600" alt="Second-hand shoes and sneakers" loading="lazy"></div>
-          <h4>Second-Hand Shoes</h4>
-          <p>Sneakers, official shoes, sandals and school shoes for men, women and children.</p>
-          <span class="tag">Second-Hand</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600" alt="Brand new clothes with tags" loading="lazy"></div>
-          <h4>Brand New Clothes</h4>
-          <p>Fresh, brand new clothes for everyone — men, women and children. Latest styles, great prices.</p>
-          <span class="tag gold">Brand New</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- PART 2: ACCESSORIES -->
+    <!-- PART 1: SMARTPHONES -->
     <div class="shop-block reveal">
       <div class="shop-block-head">
         <div class="shop-block-icon icon-tech">📱</div>
-        <h3>Part 2: Electronics & Accessories</h3>
-        <p>All the accessories you need for your devices.</p>
+        <h3>Smartphones & Mobile Devices</h3>
+        <p>Budget to flagship phones — all tested and ready.</p>
       </div>
       <div class="cards">
         <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Quality phones for sale" loading="lazy"></div>
-          <h4>Phones</h4>
-          <p>Quality phones at friendly prices — from basic phones to smartphones.</p>
-          <span class="tag">Electronics</span>
+          <div class="card-img">📱<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=80" alt="Budget smartphone" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Smartphones</div>
+            <h4>Infinix Hot / Tecno Spark / Camon</h4>
+            <div class="card-price">TZS 175,000 – 350,000</div>
+            <div class="card-price-usd">$65 – $130</div>
+            <p>Budget to mid-range smartphones. 4GB RAM, 64GB–128GB ROM, 5000mAh battery. Great value for daily use.</p>
+            <span class="tag">Budget</span>
+          </div>
         </div>
         <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600" alt="USB chargers and cables" loading="lazy"></div>
-          <h4>USB Chargers & Cables</h4>
-          <p>Chargers, USB cables and adapters for all phone types — original and long-lasting.</p>
-          <span class="tag">Accessories</span>
+          <div class="card-img">📱<img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=600&q=80" alt="Samsung Galaxy A" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Smartphones</div>
+            <h4>Samsung Galaxy A Series</h4>
+            <div class="card-price">TZS 340,000 – 580,000</div>
+            <div class="card-price-usd">$125 – $215</div>
+            <p>Reliable mid-tier brand smartphones. A06, A16, A25. 6.7" display, dual SIM support, trusted Samsung quality.</p>
+            <span class="tag">Mid-Range</span>
+          </div>
         </div>
         <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1618410320928-25228d811631?w=600" alt="Genuine memory cards" loading="lazy"></div>
-          <h4>Memory Cards</h4>
-          <p>Genuine memory cards in all sizes — 16GB, 32GB, 64GB, 128GB and more.</p>
-          <span class="tag">Accessories</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600" alt="Earphones and headphones" loading="lazy"></div>
-          <h4>Earphones & Headphones</h4>
-          <p>Clear sound earphones and headphones — wired and wireless, all phone brands.</p>
-          <span class="tag">Accessories</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600" alt="Radios and speakers" loading="lazy"></div>
-          <h4>Radios & More</h4>
-          <p>Radios, speakers, phone covers, screen protectors and all other accessories.</p>
-          <span class="tag">Accessories</span>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=600" alt="Power banks" loading="lazy"></div>
-          <h4>Power Banks</h4>
-          <p>Stay charged all day — power banks in all capacities for every phone.</p>
-          <span class="tag">Accessories</span>
+          <div class="card-img">📱<img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=600&q=80" alt="iPhone flagship" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Smartphones</div>
+            <h4>iPhone 14/15/16 Pro & S24 Ultra</h4>
+            <div class="card-price">TZS 2,170,000 – 4,800,000</div>
+            <div class="card-price-usd">$800 – $1,800</div>
+            <p>High-end premium flagship smartphones. Top performance, pro-grade cameras, and long battery life.</p>
+            <span class="tag gold">Flagship</span>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- PART 2: AUDIO -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">🎧</div>
+        <h3>Audio Devices & Mobile Accessories</h3>
+        <p>Earbuds, speakers, power banks and more.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🎧<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80" alt="TWS earbuds" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Audio</div>
+            <h4>TWS Wireless Bluetooth Earbuds</h4>
+            <div class="card-price">TZS 25,000 – 260,000</div>
+            <div class="card-price-usd">$9 – $95</div>
+            <p>JBL, Oraimo, Anker — wireless noise-canceling and sports earbuds for calls, music and workouts.</p>
+            <span class="tag">Audio</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🔋<img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80" alt="Power bank" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Accessories</div>
+            <h4>Portable Power Banks (10K – 20K mAh)</h4>
+            <div class="card-price">TZS 35,000 – 90,000</div>
+            <div class="card-price-usd">$13 – $33</div>
+            <p>Dual USB / Type-C fast-charging power banks. Keep your phone charged all day, wherever you go.</p>
+            <span class="tag">Accessories</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🔊<img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80" alt="Bluetooth speaker" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Audio</div>
+            <h4>Portable Bluetooth Speakers</h4>
+            <div class="card-price">TZS 135,000 – 1,200,000</div>
+            <div class="card-price-usd">$50 – $440</div>
+            <p>JBL Go, Flip, PartyBox — from compact waterproof speakers to loud party speakers.</p>
+            <span class="tag">Audio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 3: LAPTOPS -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">💻</div>
+        <h3>Laptops & Office Equipment</h3>
+        <p>For students, businesses and professionals.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">💻<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80" alt="Refurbished laptop" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Laptops</div>
+            <h4>Refurbished Business Laptops</h4>
+            <div class="card-price">TZS 280,000 – 690,000</div>
+            <div class="card-price-usd">$105 – $255</div>
+            <p>HP EliteBook, Dell Latitude, Lenovo ThinkPad. Core i3/i5, 8GB RAM, 128–256GB SSD. Great for students and small businesses.</p>
+            <span class="tag">Refurbished</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">💻<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=80" alt="Core i7 laptop" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Laptops</div>
+            <h4>Brand New Core i7 High-Spec Laptops</h4>
+            <div class="card-price">TZS 1,050,000 – 2,500,000</div>
+            <div class="card-price-usd">$390 – $920</div>
+            <p>16GB RAM, 512GB SSD — for corporate and professional use. Fast, powerful, reliable.</p>
+            <span class="tag gold">Brand New</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🖨️<img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&q=80" alt="Printer" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Printers</div>
+            <h4>EcoTank Ink Tank Printers</h4>
+            <div class="card-price">TZS 380,000 – 540,000</div>
+            <div class="card-price-usd">$140 – $200</div>
+            <p>Epson L3210, HP Smart Tank. Color print, scan, and copy — ideal for offices and stationery shops.</p>
+            <span class="tag">Printers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 4: SOLAR -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">☀️</div>
+        <h3>Solar & Power Backup Solutions</h3>
+        <p>Never worry about power cuts again.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">☀️<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80" alt="Solar inverter" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Solar</div>
+            <h4>Solar Hybrid Inverters (1.5kW – 5kW)</h4>
+            <div class="card-price">TZS 450,000 – 1,850,000</div>
+            <div class="card-price-usd">$165 – $680</div>
+            <p>Converts solar energy and charges backup batteries. Perfect for homes and small businesses.</p>
+            <span class="tag">Solar</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">⚡<img src="https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?w=600&q=80" alt="UPS system" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Backup</div>
+            <h4>UPS Systems (850VA – 2000VA)</h4>
+            <div class="card-price">TZS 170,000 – 575,000</div>
+            <div class="card-price-usd">$62 – $210</div>
+            <p>Uninterruptible power supply for office computers and home systems. Keeps you running during outages.</p>
+            <span class="tag">Backup</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">💡<img src="https://images.unsplash.com/photo-1565636192335-3d9b0e0e0e0e?w=600&q=80" alt="LED emergency light" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Portable</div>
+            <h4>Rechargeable LED Emergency Lights</h4>
+            <div class="card-price">TZS 15,000 – 60,000</div>
+            <div class="card-price-usd">$5.50 – $22</div>
+            <p>Portable lights for rural areas or temporary power outages. Solar bulbs and rechargeable lamps.</p>
+            <span class="tag">Portable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 5: FOOTWEAR -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-fashion">👟</div>
+        <h3>Footwear</h3>
+        <p>Sneakers, formal shoes, and boots for men & women.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">👟<img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&q=80" alt="Sneakers" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Footwear</div>
+            <h4>Casual Sneakers</h4>
+            <div class="card-price">TZS 35,000 – 120,000</div>
+            <div class="card-price-usd">$13 – $45</div>
+            <p>Nike Air Force 1, Jordan Retro, Vans, Converse — popular urban streetwear shoes.</p>
+            <span class="tag">Fashion</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">👞<img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&q=80" alt="Formal shoes" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Footwear</div>
+            <h4>Men's Formal Leather Shoes & Brogues</h4>
+            <div class="card-price">TZS 55,000 – 150,000</div>
+            <div class="card-price-usd">$20 – $55</div>
+            <p>Genuine or synthetic leather dress shoes for office and formal events. Classic style, comfortable fit.</p>
+            <span class="tag">Formal</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🥾<img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&q=80" alt="Boots" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Footwear</div>
+            <h4>Boots & Tactical Boots</h4>
+            <div class="card-price">TZS 80,000 – 160,000</div>
+            <div class="card-price-usd">$30 – $60</div>
+            <p>Timberland, Brogue Boots — durable outdoor and style boots for any terrain.</p>
+            <span class="tag">Boots</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 6: APPAREL -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-fashion">👕</div>
+        <h3>Apparel & Clothes</h3>
+        <p>Streetwear, dresses, and everyday fashion.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">👕<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" alt="T-shirt" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Apparel</div>
+            <h4>Streetwear (T-Shirts, Hoodies, Tops)</h4>
+            <div class="card-price">TZS 15,000 – 45,000</div>
+            <div class="card-price-usd">$5.50 – $16.50</div>
+            <p>Modern fashion wear for youth — casual tops, t-shirts and hoodies in trending styles.</p>
+            <span class="tag">Casual</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">👗<img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=600&q=80" alt="Dress" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Apparel</div>
+            <h4>Women's Dresses & Designer Wear</h4>
+            <div class="card-price">TZS 25,000 – 110,000</div>
+            <div class="card-price-usd">$9 – $40</div>
+            <p>Casual dresses, official wear, and dinner dresses — carefully selected for style and quality.</p>
+            <span class="tag">Fashion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 7: KITCHEN -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">🍳</div>
+        <h3>Home & Kitchen Appliances</h3>
+        <p>Modern appliances for modern homes.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🍳<img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&q=80" alt="Air fryer" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Kitchen</div>
+            <h4>Electric Air Fryers (4L – 8L)</h4>
+            <div class="card-price">TZS 120,000 – 320,000</div>
+            <div class="card-price-usd">$45 – $118</div>
+            <p>Oil-free cooking appliances for modern kitchens. Healthy, fast, easy to use.</p>
+            <span class="tag">Kitchen</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🥤<img src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&q=80" alt="Blender" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Kitchen</div>
+            <h4>Multi-Function Blenders</h4>
+            <div class="card-price">TZS 45,000 – 150,000</div>
+            <div class="card-price-usd">$16.50 – $55</div>
+            <p>Heavy-duty ice-crushing kitchen blenders and food processors. Perfect for smoothies and juices.</p>
+            <span class="tag">Kitchen</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🔊<img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80" alt="Subwoofer" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Audio</div>
+            <h4>Subwoofer Sound Systems</h4>
+            <div class="card-price">TZS 110,000 – 280,000</div>
+            <div class="card-price-usd">$40 – $103</div>
+            <p>Sea Piano, Boss, Alitop — 2.1 / 3.1 home audio speaker setups with deep bass.</p>
+            <span class="tag">Audio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 8: TVs -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">📺</div>
+        <h3>TVs & Large Appliances</h3>
+        <p>Smart TVs and cooling systems.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">📺<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&q=80" alt="Smart TV" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">TV</div>
+            <h4>Smart TVs (32" – 55")</h4>
+            <div class="card-price">TZS 320,000 – 1,800,000</div>
+            <div class="card-price-usd">$118 – $660</div>
+            <p>Full HD and 4K Smart TVs — Android, LG, Samsung. Perfect for movies, sports and streaming.</p>
+            <span class="tag">TV</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">❄️<img src="https://images.unsplash.com/photo-1631545806609-24c1c3e68a44?w=600&q=80" alt="AC unit" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Cooling</div>
+            <h4>Split Air Conditioner Units</h4>
+            <div class="card-price">TZS 850,000 – 1,300,000</div>
+            <div class="card-price-usd">$315 – $480</div>
+            <p>Inverter AC units (12,000–18,000 BTU) for tropical climates. Energy efficient and quiet.</p>
+            <span class="tag">Cooling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 9: DAILY -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-fashion">🧴</div>
+        <h3>Daily Supplies & FMCG</h3>
+        <p>Everyday essentials for every household.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🧴<img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" alt="Hygiene products" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Daily</div>
+            <h4>Personal Hygiene & Care Products</h4>
+            <div class="card-price">TZS 1,000 – 15,000</div>
+            <div class="card-price-usd">$0.40 – $5.50</div>
+            <p>Toothpastes, laundry detergents, petroleum jelly, soaps, and sanitary products.</p>
+            <span class="tag">FMCG</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🥤<img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" alt="Beverages" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Daily</div>
+            <h4>Packaged Foods & Beverages</h4>
+            <div class="card-price">TZS 600 – 25,000</div>
+            <div class="card-price-usd">$0.22 – $9.20</div>
+            <p>Bottled water, energy drinks, soft drinks, teas, coffees, and cooking oils.</p>
+            <span class="tag">FMCG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 10: AUTOMOTIVE -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">🚗</div>
+        <h3>Automotive, Motorcycle & Spare Parts</h3>
+        <p>For drivers, riders and mechanics.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🏍️<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=600&q=80" alt="Motorcycle parts" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Automotive</div>
+            <h4>Motorcycle & Bajaj Parts</h4>
+            <div class="card-price">TZS 15,000 – 180,000</div>
+            <div class="card-price-usd">$5.50 – $66</div>
+            <p>Tires, batteries, brake pads, and chains for 2-wheelers and 3-wheelers (Tuk-Tuks/Bajajs). High demand in Dar and regional hubs.</p>
+            <span class="tag">Parts</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🚗<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Car accessories" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Automotive</div>
+            <h4>Car Accessories</h4>
+            <div class="card-price">TZS 20,000 – 250,000</div>
+            <div class="card-price-usd">$7.40 – $92</div>
+            <p>Dashcams, seat covers, LED headlights, engine oils, and car care kits.</p>
+            <span class="tag">Accessories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 11: HARDWARE -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-tech">🔧</div>
+        <h3>Construction, Hardware & Power Tools</h3>
+        <p>For builders, tradespeople and DIY.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🔧<img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=600&q=80" alt="Power tools" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Hardware</div>
+            <h4>Power Tools (Drills, Grinders, Welders)</h4>
+            <div class="card-price">TZS 65,000 – 450,000</div>
+            <div class="card-price-usd">$24 – $165</div>
+            <p>Hand drills, angle grinders, welding machines, and general hardware sets for tradespeople and DIY builders.</p>
+            <span class="tag">Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 12: BABY -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-fashion">🍼</div>
+        <h3>Baby, Kids & Maternity Products</h3>
+        <p>Everything for your little ones.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🍼<img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&q=80" alt="Baby care" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Baby</div>
+            <h4>Diapers & Baby Care Supplies</h4>
+            <div class="card-price">TZS 12,000 – 65,000</div>
+            <div class="card-price-usd">$4.40 – $24</div>
+            <p>Disposable diapers (Softcare), baby wipes, and feeding bottles. Trusted brands for your baby's care.</p>
+            <span class="tag">Baby</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">🚼<img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600&q=80" alt="Baby stroller" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Baby</div>
+            <h4>Baby Gear & Furniture</h4>
+            <div class="card-price">TZS 85,000 – 380,000</div>
+            <div class="card-price-usd">$31 – $140</div>
+            <p>Strollers, baby carriers, high chairs, and cribs. Safe, comfortable and built to last.</p>
+            <span class="tag">Baby</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 13: HEALTH -->
+    <div class="shop-block reveal">
+      <div class="shop-block-head">
+        <div class="shop-block-icon icon-fashion">💪</div>
+        <h3>Health, Wellness & Fitness</h3>
+        <p>For a healthy body and mind.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-img">🩺<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Health equipment" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Health</div>
+            <h4>Home Health Equipment</h4>
+            <div class="card-price">TZS 25,000 – 120,000</div>
+            <div class="card-price-usd">$9.20 – $44</div>
+            <p>Digital blood pressure monitors, pulse oximeters, blood glucose meters, and infrared thermometers.</p>
+            <span class="tag">Health</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">💪<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Fitness equipment" loading="lazy" onerror="this.remove()"></div>
+          <div class="card-body">
+            <div class="card-cat">Fitness</div>
+            <h4>Fitness Equipment</h4>
+            <div class="card-price">TZS 15,000 – 95,000</div>
+            <div class="card-price-usd">$5.50 – $35</div>
+            <p>Resistance bands, dumbbells, yoga mats, and waist trainers. Build your home gym.</p>
+            <span class="tag">Fitness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ===== HOW TO ORDER ===== -->
 <section class="steps" id="order">
   <div class="container">
     <div style="text-align:center;">
@@ -405,26 +762,13 @@
       <p class="sec-sub" style="margin:0 auto;">No stress. No waiting. Get what you need today!</p>
     </div>
     <div class="steps-grid">
-      <div class="step-card reveal">
-        <div class="step-num">1</div>
-        <h4>📞 Call or WhatsApp</h4>
-        <p>Contact us on <strong>+255 617 573 840</strong>. We answer fast — and we're friendly!</p>
-      </div>
-      <div class="step-card reveal">
-        <div class="step-num">2</div>
-        <h4>🛍️ Tell Us What You Need</h4>
-        <p>Clothes, shoes, phones or accessories — tell us the size, type and quantity you want.</p>
-      </div>
-      <div class="step-card reveal">
-        <div class="step-num">3</div>
-        <h4>🚚 Receive Your Order</h4>
-        <p>Come pick up, or get fast delivery anywhere in Tanzania. Simple and safe!</p>
-      </div>
+      <div class="step-card reveal"><div class="step-num">1</div><h4>📞 Call or WhatsApp</h4><p>Contact us on <strong>+255 617 573 840</strong>. We answer fast — and we're friendly!</p></div>
+      <div class="step-card reveal"><div class="step-num">2</div><h4>🛍️ Tell Us What You Need</h4><p>Tell us the product, size, type and quantity you want.</p></div>
+      <div class="step-card reveal"><div class="step-num">3</div><h4>🚚 Receive Your Order</h4><p>Come pick up, or get fast delivery anywhere in Tanzania. Simple and safe!</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===== WHY US ===== -->
 <section class="why" id="why">
   <div class="container">
     <div style="text-align:center;">
@@ -433,31 +777,14 @@
       <p class="sec-sub" style="margin:0 auto;color:var(--text-light);">Why hundreds of customers trust us every day.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card reveal">
-        <div class="w-icon">💰</div>
-        <h4>Best Prices</h4>
-        <p>Fair, honest pricing on everything we sell. Great value for your money.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="w-icon">✅</div>
-        <h4>Quality Guaranteed</h4>
-        <p>Every item is carefully checked before it reaches our shelves.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="w-icon">👨‍👩‍👧‍👦</div>
-        <h4>For the Whole Family</h4>
-        <p>Men, women and children — everyone finds something at MASHALA.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="w-icon">🤝</div>
-        <h4>Friendly Service</h4>
-        <p>We treat every customer like family. Your satisfaction is our goal.</p>
-      </div>
+      <div class="why-card reveal"><div class="w-icon">💰</div><h4>Best Prices</h4><p>Fair, honest pricing on everything we sell. Great value for your money.</p></div>
+      <div class="why-card reveal"><div class="w-icon">✅</div><h4>Quality Guaranteed</h4><p>Every item is carefully checked before it reaches our shelves.</p></div>
+      <div class="why-card reveal"><div class="w-icon">👨‍👩‍👧‍👦</div><h4>For the Whole Family</h4><p>Men, women and children — everyone finds something at MASHALA.</p></div>
+      <div class="why-card reveal"><div class="w-icon">🤝</div><h4>Friendly Service</h4><p>We treat every customer like family. Your satisfaction is our goal.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
 <section class="testimonials" id="testimonials" style="background:var(--navy-dark);">
   <div class="container">
     <div style="text-align:center;">
@@ -469,32 +796,22 @@
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
         <p>"Nilinunua nguo za watoto wangu wote hapa. Bei nafuu na ubora mzuri sana! Delivery ilikuwa haraka."</p>
-        <div class="who">
-          <div class="avatar">A</div>
-          <div><h5>Amina J.</h5><span>Dar es Salaam</span></div>
-        </div>
+        <div class="who"><div class="avatar">A</div><div><h5>Amina J.</h5><span>Dar es Salaam</span></div></div>
       </div>
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
         <p>"Excellent service! I ordered headphones and a charger — both work perfectly. Highly recommended."</p>
-        <div class="who">
-          <div class="avatar">J</div>
-          <div><h5>John M.</h5><span>Arusha</span></div>
-        </div>
+        <div class="who"><div class="avatar">J</div><div><h5>John M.</h5><span>Arusha</span></div></div>
       </div>
       <div class="testi-card reveal">
         <div class="stars">★★★★★</div>
         <p>"Mashala Investment ni waaminifu. Nimenunua viatu na nguo mara nyingi — kila mara nimeridhika."</p>
-        <div class="who">
-          <div class="avatar">G</div>
-          <div><h5>Grace K.</h5><span>Mwanza</span></div>
-        </div>
+        <div class="who"><div class="avatar">G</div><div><h5>Grace K.</h5><span>Mwanza</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-grid">
@@ -506,37 +823,18 @@
           <a href="tel:+255617573840" class="btn btn-call">📞 Call: +255 617 573 840</a>
           <a href="https://wa.me/255617573840" target="_blank" class="btn btn-wa">💬 WhatsApp Us</a>
         </div>
-        <div class="hours-box">
-          <span class="clock">🕐</span>
-          <div>
-            <h5>Opening Hours</h5>
-            <p>Sunday – Friday: 8:00 AM – 7:00 PM</p>
-          </div>
-        </div>
+        <div class="hours-box"><span class="clock">🕐</span><div><h5>Opening Hours</h5><p>Sunday – Friday: 8:00 AM – 7:00 PM</p></div></div>
       </div>
       <div class="contact-card reveal">
-        <div class="contact-line">
-          <span class="c-icon">📞</span>
-          <div><h5>Phone / WhatsApp</h5><p>+255 617 573 840</p></div>
-        </div>
-        <div class="contact-line">
-          <span class="c-icon">📍</span>
-          <div><h5>Location</h5><p>🇹🇿 Serving customers ALL OVER TANZANIA</p></div>
-        </div>
-        <div class="contact-line">
-          <span class="c-icon">👕</span>
-          <div><h5>Department 1</h5><p>Clothes & Shoes (Second-Hand & Brand New)</p></div>
-        </div>
-        <div class="contact-line">
-          <span class="c-icon">📱</span>
-          <div><h5>Department 2</h5><p>Phones & All Accessories</p></div>
-        </div>
+        <div class="contact-line"><span class="c-icon">📞</span><div><h5>Phone / WhatsApp</h5><p>+255 617 573 840</p></div></div>
+        <div class="contact-line"><span class="c-icon">📍</span><div><h5>Location</h5><p>🇹🇿 Serving customers ALL OVER TANZANIA</p></div></div>
+        <div class="contact-line"><span class="c-icon">💳</span><div><h5>Payment</h5><p>M-Pesa • Tigo Pesa • Airtel Money • Cash</p></div></div>
+        <div class="contact-line"><span class="c-icon">🚚</span><div><h5>Delivery</h5><p>Fast delivery anywhere in Tanzania</p></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -545,7 +843,7 @@
           <span class="logo-badge">💰</span>
           <span>MASHALA <span style="color:var(--cyan);">INVESTMENT</span></span>
         </a>
-        <p>Your one-stop shop for quality clothes, shoes and electronics accessories. Serving you with honesty, quality and fair prices.</p>
+        <p>Your one-stop shop for quality products across Tanzania. Electronics, fashion, home, solar and more — all at fair prices.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
@@ -557,40 +855,32 @@
         </ul>
       </div>
       <div>
-        <h4>Our Products</h4>
+        <h4>Top Categories</h4>
         <ul>
-          <li><a href="#shop">👕 Second-Hand Clothes</a></li>
-          <li><a href="#shop">👟 Second-Hand Shoes</a></li>
-          <li><a href="#shop">✨ Brand New Clothes</a></li>
-          <li><a href="#shop">📱 Phones & Accessories</a></li>
+          <li><a href="#shop">📱 Smartphones</a></li>
+          <li><a href="#shop">💻 Laptops</a></li>
+          <li><a href="#shop">👟 Footwear</a></li>
+          <li><a href="#shop">📺 Smart TVs</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2026 MASHALA INVESTMENT. All rights reserved. | Quality • Trust • Best Prices
-    </div>
+    <div class="footer-bottom">© 2026 MASHALA INVESTMENT. All rights reserved. | Quality • Trust • Best Prices</div>
   </div>
 </footer>
 
-<!-- ===== FLOATING WHATSAPP ===== -->
-<a href="https://wa.me/255617573840" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/255617573840" target="_blank" class="wa-float" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script>
-  // Mobile menu
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-  // Scroll reveal animation
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 </body>
-</html>"add website"
+</html>
